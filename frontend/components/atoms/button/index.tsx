@@ -1,7 +1,7 @@
 import React from "react";
 
 // Buttonコンポーネントのプロパティの型定義
-interface ButtonProps {
+export interface ButtonProps {
   children: React.ReactNode; // ボタンの中身（テキストや要素）
   className?: string; // オプショナルなCSSクラス名
   onClick?: () => void; // オプショナルなクリックイベントハンドラ
