@@ -15,5 +15,5 @@ export const findById = async (id: string): Promise<UserModel> => {
   });
   if (user == null) throw new Error("User not found");
   const { name, email } = user;
-  return { name: name ?? undefined, email };
+  return { name: name ?? undefined, email: email ?? undefined };
 };

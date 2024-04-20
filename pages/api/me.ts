@@ -5,7 +5,7 @@ import { userById } from "@backend/services/user/user.service";
 import { authOptions } from "./auth/[...nextauth]";
 type Data = {
   name?: string;
-  email: string;
+  email?: string;
 };
 
 type ErrorResponse = {
