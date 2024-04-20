@@ -2,7 +2,7 @@ import React from "react";
 import Image from "next/image";
 import Button from "@frontend/components/atoms/button";
 
-type LineLoginButtonProps = {
+export type LineLoginButtonProps = {
   onClick: () => void;
   text: string;
 };

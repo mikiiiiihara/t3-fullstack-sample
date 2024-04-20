@@ -2,7 +2,7 @@ import Button from "@frontend/components/atoms/button";
 import React from "react";
 import { FcGoogle } from "react-icons/fc";
 
-type GoogleLoginButtonProps = {
+export type GoogleLoginButtonProps = {
   onClick: () => void;
   text: string;
 };

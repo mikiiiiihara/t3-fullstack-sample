@@ -1,12 +1,12 @@
 import Button from "@frontend/components/atoms/button";
-import { signOut } from "next-auth/react";
 import React from "react";
 
-type Props = {
+export type Props = {
   name: string;
+  signOut: () => void;
 };
 
-const Top: React.FC<Props> = ({ name }) => {
+const Top: React.FC<Props> = ({ name, signOut }) => {
   return (
     <>
       <p className="font-bold">Welcome {name}!</p>
