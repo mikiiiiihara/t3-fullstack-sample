@@ -1,9 +1,9 @@
 import React from "react";
 import { signIn } from "next-auth/react";
-import LineLoginButton from "@frontend/components/molecules/social-login-button/line-login-button";
-import GoogleLoginButton from "@frontend/components/molecules/social-login-button/google-login-button";
+import { GoogleLoginButton } from "@frontend/components/molecules/social-login-button/google-login-button";
+import { LineLoginButton } from "@frontend/components/molecules/social-login-button/line-login-button";
 
-const Login = () => {
+const Component = () => {
   return (
     <center>
       <h2 className="text-lg font-bold">ログイン</h2>
@@ -16,4 +16,5 @@ const Login = () => {
   );
 };
 
-export default Login;
+Component.displayName = "Login";
+export const Login = React.memo(Component);

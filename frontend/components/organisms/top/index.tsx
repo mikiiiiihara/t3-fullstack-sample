@@ -1,4 +1,4 @@
-import Button from "@frontend/components/atoms/button";
+import { Button } from "@frontend/components/atoms/button";
 import React from "react";
 
 export type Props = {
@@ -6,7 +6,7 @@ export type Props = {
   signOut: () => void;
 };
 
-const Top: React.FC<Props> = ({ name, signOut }) => {
+const Component: React.FC<Props> = ({ name, signOut }) => {
   return (
     <>
       <p className="font-bold">Welcome {name}!</p>
@@ -17,4 +17,5 @@ const Top: React.FC<Props> = ({ name, signOut }) => {
   );
 };
 
-export default Top;
+Component.displayName = "Top";
+export const Top = React.memo(Component);

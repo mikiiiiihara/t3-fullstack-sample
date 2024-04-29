@@ -1,13 +1,13 @@
 import React from "react";
 import Image from "next/image";
-import Button from "@frontend/components/atoms/button";
+import { Button } from "@frontend/components/atoms/button";
 
 export type LineLoginButtonProps = {
   onClick: () => void;
   text: string;
 };
 
-const LineLoginButton: React.FC<LineLoginButtonProps> = ({ onClick, text }) => {
+const Component: React.FC<LineLoginButtonProps> = ({ onClick, text }) => {
   return (
     <Button
       className="bg-[#06C755] w-[200px] box-border text-white m-1 p-0  hover:bg-[#05a14f] flex items-center transition-colors duration-300"
@@ -25,4 +25,5 @@ const LineLoginButton: React.FC<LineLoginButtonProps> = ({ onClick, text }) => {
   );
 };
 
-export default LineLoginButton;
+Component.displayName = "LineLoginButton";
+export const LineLoginButton = React.memo(Component);

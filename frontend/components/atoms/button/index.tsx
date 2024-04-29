@@ -7,7 +7,7 @@ export interface ButtonProps {
   onClick?: () => void; // オプショナルなクリックイベントハンドラ
 }
 
-const Button: React.FC<ButtonProps> = ({
+const Component: React.FC<ButtonProps> = ({
   children,
   className = "",
   onClick,
@@ -22,4 +22,5 @@ const Button: React.FC<ButtonProps> = ({
   );
 };
 
-export default Button;
+Component.displayName = "Button";
+export const Button = React.memo(Component);

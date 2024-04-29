@@ -1,5 +1,6 @@
 import { Meta, StoryObj } from "@storybook/react";
-import GoogleLoginButton, {
+import {
+  GoogleLoginButton,
   GoogleLoginButtonProps,
 } from "./google-login-button";
 

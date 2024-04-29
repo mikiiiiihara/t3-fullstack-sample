@@ -1,5 +1,5 @@
 import { Meta, StoryObj } from "@storybook/react";
-import LineLoginButton, { LineLoginButtonProps } from "./line-login-button";
+import { LineLoginButton, LineLoginButtonProps } from "./line-login-button";
 
 export default {
   title: "molecules/SocialLoginButton/LineLoginButton",
